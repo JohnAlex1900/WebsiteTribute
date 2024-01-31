@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  background-color: rgba(0, 0, 255, 0.3); /* Slightly transparent blue */
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+main {
+  background-color: rgba(169, 169, 169, 0.3); /* Slightly transparent grey */
+  padding: 20px;
+}
+
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#tribute-text {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#tribute-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#attributes {
+  flex: 1;
+}
+
+#attributes img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#history {
+  flex: 1;
+}
+
+#moving-text {
+  background-color: rgba(0, 0, 255, 0.3);
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.text-container {
+  background-color: rgba(165, 42, 42, 0.768);
+}
+
+.text1 {
+  color: rgb(0, 225, 255);
+  margin-top: 83px;
+  line-height: 2;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
